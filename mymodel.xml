@@ -1,0 +1,230 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Arch_Linux">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DDR">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DRDRAM"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Athlon">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Duron"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#AMDCPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IntelCPU">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#SSD">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#win10">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Windows"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#windows10"/>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#MHD">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#SSD"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DDR3">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DDR4"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DDR"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Pentium">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IntelCPU"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Duron">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#AMDCPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DOS">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#windows10">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Windows"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OpenSUSE">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Processor"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#win7">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Windows"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#window7"/>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#AMDCPU">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IntelCPU"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#window7">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Windows"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DDR4">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DDR"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Celeron">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Pentium"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IntelCPU"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Mageia">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Windows">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CentOS">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DRDRAM">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CPU">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Processor"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasDIsk">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasOS">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasRam">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasPrice">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CPU"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasCore">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasDiskCapacity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#hasCPU">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CPU"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#IaaS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Arch_Linux"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#CentOS"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Mageia"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OpenSUSE"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <IaaS rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Aliyun">
+    <hasRam>
+      <DDR3 rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#ram1">
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >32</hasPrice>
+        <hasCore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3</hasCore>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </DDR3>
+    </hasRam>
+    <hasOS>
+      <Ubuntu rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu15.0">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Ubuntu>
+    </hasOS>
+    <hasDIsk>
+      <MHD rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#disk1">
+        <hasDiskCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >320</hasDiskCapacity>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MHD>
+    </hasDIsk>
+    <hasCPU>
+      <Athlon rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#cpu1">
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >100</hasPrice>
+        <hasCore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >2</hasCore>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Athlon>
+    </hasCPU>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </IaaS>
+  <window7 rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#windows7_home_edition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </window7>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DISK"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#OS"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#RAM"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <Ubuntu rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu16.334"/>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#DOS"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Linux"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Windows"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+</rdf:RDF>

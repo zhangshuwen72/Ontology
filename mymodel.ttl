@@ -1,0 +1,202 @@
+@prefix :        <http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:OS   a       owl:Class ;
+      rdfs:subClassOf :IaaS .
+
+:cpu1
+      a       owl:NamedIndividual , :Athlon ;
+      :hasCore 2 ;
+      :hasPrice 100 .
+
+:DDR  a       owl:Class ;
+      rdfs:subClassOf :RAM ;
+      owl:disjointWith :DRDRAM .
+
+:IntelCPU
+      a       owl:Class ;
+      rdfs:subClassOf :CPU .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:Arch_Linux :CentOS :Mageia :OpenSUSE :Ubuntu) .
+
+:hasPrice
+      a       owl:DatatypeProperty ;
+      rdfs:domain :OS , :DISK , :RAM , :CPU ;
+      rdfs:range xsd:float .
+
+:Pentium
+      a       owl:Class ;
+      rdfs:subClassOf :IntelCPU .
+
+<http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4>
+      a       owl:Ontology .
+
+:DOS  a       owl:Class ;
+      rdfs:subClassOf :OS .
+
+:hasCPU
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain :IaaS ;
+      rdfs:range :CPU .
+
+:windows10
+      a       owl:Class ;
+      rdfs:subClassOf :Windows .
+
+:OpenSUSE
+      a       owl:Class ;
+      rdfs:subClassOf :Linux .
+
+:Ubuntu
+      a       owl:Class ;
+      rdfs:subClassOf :Linux .
+
+:win7
+      a       owl:Class ;
+      rdfs:subClassOf :Windows ;
+      owl:equivalentClass :window7 .
+
+:AMDCPU
+      a       owl:Class ;
+      rdfs:subClassOf :CPU ;
+      owl:disjointWith :IntelCPU .
+
+<http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu15.0>
+      a       :Ubuntu , owl:NamedIndividual .
+
+:RAM  a       owl:Class ;
+      rdfs:subClassOf :IaaS .
+
+:window7
+      a       owl:Class ;
+      rdfs:subClassOf :Windows .
+
+:Celeron
+      a       owl:Class ;
+      rdfs:subClassOf :IntelCPU ;
+      owl:disjointWith :Pentium .
+
+:IaaS
+      a       owl:Class .
+
+:hasCore
+      a       owl:DatatypeProperty ;
+      rdfs:domain :RAM ;
+      rdfs:range xsd:int .
+
+:Mageia
+      a       owl:Class ;
+      rdfs:subClassOf :Linux .
+
+:CentOS
+      a       owl:Class ;
+      rdfs:subClassOf :Linux .
+
+:DRDRAM
+      a       owl:Class ;
+      rdfs:subClassOf :RAM .
+
+:Aliyun
+      a       :IaaS , owl:NamedIndividual ;
+      :hasCPU :cpu1 ;
+      :hasDIsk :disk1 ;
+      :hasOS  <http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu15.0> ;
+      :hasRam :ram1 .
+
+:Arch_Linux
+      a       owl:Class ;
+      rdfs:subClassOf :Linux .
+
+:Athlon
+      a       owl:Class ;
+      rdfs:subClassOf :AMDCPU ;
+      owl:disjointWith :Duron .
+
+:DISK
+      a       owl:Class ;
+      rdfs:subClassOf :IaaS .
+
+:SSD  a       owl:Class ;
+      rdfs:subClassOf :DISK .
+
+:hasDIsk
+      a       owl:ObjectProperty ;
+      rdfs:domain :IaaS ;
+      rdfs:range :DISK .
+
+:win10
+      a       owl:Class ;
+      rdfs:subClassOf :Windows ;
+      owl:equivalentClass :windows10 .
+
+:MHD  a       owl:Class ;
+      rdfs:subClassOf :DISK ;
+      owl:disjointWith :SSD .
+
+:DDR3
+      a       owl:Class ;
+      rdfs:subClassOf :DDR ;
+      owl:disjointWith :DDR4 .
+
+:Duron
+      a       owl:Class ;
+      rdfs:subClassOf :AMDCPU .
+
+:disk1
+      a       :MHD , owl:NamedIndividual ;
+      :hasDiskCapacity 320 .
+
+:hasRam
+      a       owl:ObjectProperty ;
+      rdfs:domain :IaaS ;
+      rdfs:range :RAM .
+
+:Processor
+      a       owl:Class .
+
+:windows7_home_edition
+      a       :window7 , owl:NamedIndividual .
+
+:hasDiskCapacity
+      a       owl:DatatypeProperty ;
+      rdfs:domain :DISK ;
+      rdfs:range xsd:int .
+
+:ram1
+      a       :DDR3 , owl:NamedIndividual ;
+      :hasCore 3 ;
+      :hasPrice 32 .
+
+:DDR4
+      a       owl:Class ;
+      rdfs:subClassOf :DDR .
+
+:hasOS
+      a       owl:ObjectProperty ;
+      rdfs:domain :IaaS ;
+      rdfs:range :OS .
+
+:Linux
+      a       owl:Class ;
+      rdfs:subClassOf :OS .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:DISK :OS :RAM) .
+
+:Windows
+      a       owl:Class ;
+      rdfs:subClassOf :OS .
+
+<http://www.semanticweb.org/zsw/ontologies/2017/1/untitled-ontology-4#Ubuntu16.334>
+      a       :Ubuntu .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:DOS :Linux :Windows) .
+
+:CPU  a       owl:Class ;
+      rdfs:subClassOf :IaaS ;
+      owl:equivalentClass :Processor .
